@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'tecla',
@@ -19,6 +19,11 @@ export class TeclaComponent implements OnInit {
   constructor() {  }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges (changes: SimpleChanges) : void {
+    changes["rotulo"];
+    changes["valor"];
   }
 
   exibirRotuloSeHouver(): string {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <div class="areaTotal">
+      <div class="resultado">
+        <span class="conteudoResultado">{{valorOperacao}}</span>
+      </div>
+
+      <div class="linha">
+        <tecla valor="C" (clicar)="limpar($event)"></tecla>
+      </div>
+
+      <div class="linha">
+        <tecla valor="7" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="8" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="9" (clicar)="acionarTecla($event)"></tecla>
+        <tecla rotulo="&divide;" valor="/" (clicar)="acionarTecla($event)"></tecla>
+      </div>
+
+      <div class="linha">
+        <tecla valor="4" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="5" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="6" (clicar)="acionarTecla($event)"></tecla>
+        <tecla rotulo="&times;" valor="*" (clicar)="acionarTecla($event)"></tecla>
+      </div>
+
+      <div class="linha">
+        <tecla valor="1" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="2" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="3" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="&#43;" (clicar)="acionarTecla($event)"></tecla>
+      </div>
+
+      <div class="linha">
+        <tecla valor="0" (clicar)="acionarTecla($event)"></tecla>
+        <tecla valor="&#61;" (clicar)="acionarTecla($event)"></tecla>
+        <tecla rotulo="&minus;" valor="-" (clicar)="acionarTecla($event)"></tecla>
+      </div>
+    </div>
+  </body>
+</html>
